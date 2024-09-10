@@ -1,6 +1,6 @@
 [build]
-  publish = "dist" # Path to the folder where your static files are located (e.g., dist or build)
-  functions = "functions" # Optional: folder for Netlify Functions if you're using them
+  publish = "public" # The directory for your static assets (HTML, CSS, JS)
+  functions = "netlify/functions" # Directory for Netlify Functions
 
 [[redirects]]
   from = "/*"
