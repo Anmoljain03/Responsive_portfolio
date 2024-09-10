@@ -1,0 +1,8 @@
+[build]
+  publish = "dist" # Path to the folder where your static files are located (e.g., dist or build)
+  functions = "functions" # Optional: folder for Netlify Functions if you're using them
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
