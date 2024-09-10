@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar-->
+
+    <div class="container">
+        <nav id="header">
+           <div class="nav-logo">
+            <p class="nav-name">Logo</p>
+           </div>
+           <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link active-link" target="_blank">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#project" class="nav-link active-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link active-link">Contacts</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+           </div>
+           
+
+           <!--dark mode-->
+
+           <div class="mode">
+            <div class="moon-sun" id="toogle-switch">
+                <i class="fa fa-moon" id="moon"></i>
+                <i class="fa fa-sun" id="sun"></i>
+            </div>
+           </div>
+
+           <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+           </div>
+        </nav>
+
+        <!--main-->
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I,m</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                        <div class="text-info">
+                            <p>My name is Anmol Jain, I am a web developer with 6 months of experience</p>
+                        </div>
+                        <div class="text-btn">
+                            <button class="btn">
+                            <a href="https://drive.google.com/file/d/1UoUfFJTOcFZ0mWoB4j8SN6eIypQ0k70j/view?usp=sharing" download="Anmol Jain 2022PUFCEBMFX11453.pdf" >Download CV</a>
+                            </button>
+                        </div>
+                        <div class="social_icons">
+                            <div class="icon_circle"></div>
+                            <div class="icon"><a href="https://github.com/honyjain" target="_blank"><i class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="icon"><a href="https://www.linkedin.com/in/anmol-jain-8b204823a/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                            </div>
+                            <div class="icon"><i class="uil uil-twitter"></i>
+                            </div> 
+                            <!-- <div class="icon"><i class="uil uil-github-alt"></i>
+                            </div> -->
+                        </div>
+                
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/boy.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- about box-->
+
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="assets/boy.jpeg" alt="" class="profile" />
+                                    <h2>Web developer</h2>
+                                    <p>My name is Anmol Jain, I am a web developer with 6 months of experience</p>
+                                </figcaption>
+                            </figure>
+                            <button class="about-me-btn">Hire Me</button>
+                        </div>
+                    </div>
+                    <div class="skill">
+    <div class="skill-box">
+        <span class="title">HTML</span>
+        <div class="skill-bar html">
+            <span class="skill-per">
+                <span class="tooltip">80%</span>
+            </span>
+        </div>
+    </div>
+    <div class="skill-box">
+        <span class="title">CSS</span>
+        <div class="skill-bar css">
+            <span class="skill-per">
+                <span class="tooltip">80%</span>
+            </span>
+        </div>
+    </div>
+    <div class="skill-box">
+        <span class="title">Javascript</span>
+        <div class="skill-bar javascript">
+            <span class="skill-per">
+                <span class="tooltip">60%</span>
+            </span>
+        </div>
+    </div>
+    <div class="skill-box">
+        <span class="title">Restful API's</span>
+        <div class="skill-bar api">
+            <span class="skill-per">
+                <span class="tooltip">50%</span>
+            </span>
+        </div>
+    </div>
+    <!-- <div class="skill-box">
+        <span class="title">PHP</span>
+        <div class="skill-bar php">
+            <span class="skill-per">
+                <span class="tooltip">50%</span>
+            </span>
+        </div>
+    </div> -->
+</div>
+
+            </section>
+
+
+            <!--project box-->
+
+
+            <section class="section" id="Projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <img id="ass" src="assets/voice.jpg">
+                        <h3 id="vir">Virtual Assistant</h3>
+                        <p id="pa">This is the Virtual Assistant tool that opens<br>apps and websites with your voice commands.<br>Simply tell it what you need, and it<br>instantly launches the right application or<br>webpage, making your digital interactions<br>seamless and efficient.</p>
+                    <h3 id="check"><a href="https://anmoljain.000webhostapp.com">Check it out!</a></h3>
+                    </div>
+
+                    <div class="project-box">
+                        
+                        <img id="to" src="assets/to do.png">                    
+                        <h3 id="do">To-Do App</h3>
+                        <p id="this">This is a To-Do app designed to help users<br>organize and manage their tasks and<br> activities for enhanced productivity and time<br> management efficiently. It typically allows<br> users to create task lists, set deadlines,<br> prioritize tasks, and mark them as completed. </p>
+                        <h3 id="it"><a href="https://anmoljain.000webhostapp.com/to-do-app/index.html">Check it out!</a></h3>
+                    
+                    </div>
+                    <div class="project-box">
+                        <img id="cry" src="assets/crypto.jpg">  
+                        <h3 id="we">Crypto Webite</h3>
+                        <p id="front">This is a frontend crypto website<br> with a dynamic interface offers users<br> an engaging and visually appealing<br> platform to view data and all details<br> It ensures a smooth, interactive<br> to every user.</p>
+                        <h3 id="ht"><a href="https://anmoljain.000webhostapp.com/crypto%20website/index.html">Check it out!</a></h3>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--contact box-->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Work Together</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find me<i class="uil uil corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i>Email:anmol.jain1420@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Phone:8619681743</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="c0ac5fbd-72ff-4e38-83e1-1cac14a91b55">
+                                <input type="text" id="rm" name="Name" class="input-field" placeholder="Your Name">
+                                <input type="text" id="gn" name="email" class="input-field" placeholder="Your Email">
+                                 
+                            </div>
+                            <div class="text-area">
+                                <input type="text" name="Subject" class="input-subject" placeholder="subject">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+
+
+        <!--footer-->
+
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#project">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://github.com/honyjain" target="_blank"><i class="uil uil-github-alt"></i></a>
+                </div>
+                <div class="icon"><a href="https://www.linkedin.com/in/anmol-jain-8b204823a/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+                <div class="icon"><i class="uil uil-twitter"></i>
+                </div> 
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Anmol Jain</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+   
+    </body>
+</html>
+
+
+
+3. Vehicle Information Center 
+This is a MERN Stack using React.js, Node.js and Mongodb, In this project user can add the details of his vehicle like owner name, mileage, next service date, owner email-id, and vehicle image and these all details will be saved in our Mongodb database and we can update all the details of the vehicle at any time and we can also delete the vehicle from our database at any time.
